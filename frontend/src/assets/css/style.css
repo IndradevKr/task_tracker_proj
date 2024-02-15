@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.initial_capital {
+    text-transform: capitalize;
+}
+
+.margin-top-1 {
+    margin-top: 1rem;
+}
+
+.margin-top-2 {
+    margin-top: 2rem;
+}
+
+.name-input {
+    background-color: #e6e6ff;
+    border-radius: 5px;
+    padding: 8px;
+    width: 250px;
+}
+
+.ant-table-thead .ant-table-cell {
+    background-color: #b3b3ff !important;
+}
