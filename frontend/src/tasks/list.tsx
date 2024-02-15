@@ -53,7 +53,7 @@ const useColumns = ({handleUpdate, handleDelete}: ColProps):  TableProps<DataTyp
             render: (_, {id, status}: TaskData): ReactElement => {
                 return (
                     <Space>
-                        <Button type="primary" disabled={status==='completed'} onClick={() => handleUpdate(id)}>Complete</Button>
+                        <Button type="primary" disabled={status==='completed'} onClick={() => handleUpdate(id)}>Completed</Button>
                         <Button type="default" onClick={() => handleDelete(id)}>Delete</Button>
                     </Space>
                 )
@@ -65,7 +65,7 @@ const useColumns = ({handleUpdate, handleDelete}: ColProps):  TableProps<DataTyp
 
 
 const TasksList = () => {
-    const limit: number=10;
+    const limit = 7;
 
     const [page, setPage] = useState(1);
     

@@ -10,7 +10,7 @@ export const useAddTask = () => {
             notify('success', 'Added', 'New task added.');
         },
         onError: () => {
-            notify('error', 'Error', 'Task already exists.'); 
+            notify('error', 'Error', 'Task already exists in todo.'); 
         },
         onSettled: () => {
             queryClient.invalidateQueries({ queryKey: ['fetch-tasks'] });

@@ -11,7 +11,7 @@ describe('TaskController', () => {
       controllers: [TaskController],
       providers: [
         {
-          provide: TaskService, 
+          provide: TaskService,
           useValue: {
             create: jest.fn().mockReturnValue(true),
             update: jest.fn().mockReturnValue(true),
@@ -19,9 +19,10 @@ describe('TaskController', () => {
             taskDetail: jest.fn().mockReturnValue({
               id: 'valid-id',
               name: 'write blog',
-              status: 'inProgress'
-            })
-        }}
+              status: 'inProgress',
+            }),
+          },
+        },
       ],
     }).compile();
 
@@ -40,7 +41,7 @@ describe('TaskController', () => {
     const mockdata = {
       name: 'read book',
       status: 'todo' as StatusType,
-    }
+    };
     expect(controller.createTask(mockdata)).toBe(true);
   });
 
@@ -48,7 +49,7 @@ describe('TaskController', () => {
     const mockdata = {
       name: 'read book',
       status: 'todo' as StatusType,
-    }
+    };
     expect(controller.createTask(mockdata)).toBe(true);
   });
 
@@ -57,10 +58,10 @@ describe('TaskController', () => {
   });
 
   it('task should be updated', () => {
-    const id = "12345"; 
+    const id = '12345';
     const mockdata = {
       status: 'inProgress' as StatusType,
-    }
+    };
     expect(controller.updateTask(id, mockdata)).toBe(true);
   });
 
@@ -69,8 +70,7 @@ describe('TaskController', () => {
   });
 
   it('task should be deleted', () => {
-    const id = "12345"; 
+    const id = '12345';
     expect(controller.deleteTask(id)).toBe(true);
   });
-
 });
