@@ -4,7 +4,7 @@
 - frontend: consists of front application created with vite
 - task_tracker: consist of nestjs application
 
-#### Steps to run project:
+#### Steps to run project in local:
 - Backend ( task_tracker ):
   1. cd task_tracker
   2. npm install
