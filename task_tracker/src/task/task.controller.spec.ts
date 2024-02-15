@@ -60,7 +60,7 @@ describe('TaskController', () => {
   it('task should be updated', () => {
     const id = '12345';
     const mockdata = {
-      status: 'inProgress' as StatusType,
+      status: 'completed' as StatusType,
     };
     expect(controller.updateTask(id, mockdata)).toBe(true);
   });
