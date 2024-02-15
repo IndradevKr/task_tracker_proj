@@ -10,6 +10,7 @@
   2. npm install
   3. create .env file where .env.example ( in root ) and copy the contents from .env.example
   4. npm run start:dev
+  5. npm run test ( to run test )
 
 - FrontEnd ( frontend )
   1. cd frontend
